@@ -23,12 +23,26 @@ let coin = {
  
 
     toHTML: function() {
-        let image = document.createElement('img');
-        document.write('<img src="albertEilnsteinCoin.jpg" alt="albert eilnte coin" width="500" height="600"></img>')
-        image.append()
+        if (this.state ===0){
+           image.src = "albertEilnsteinCoin.jpg"
+        }else{"albertEinsteinBackCoin.jpeg"}
         /* 3. Set the properties of this image element to show either face-up
            or face-down, depending on whether this.state is 0 or 1.*/
         return image;
     }
 
 };
+
+function display20Flips (){
+   for (let index = 20; index < display20Flips.length; index ++){
+      const coinFlip = display20Flips
+      display20Flips.append(coinFlip)
+   }
+}
+
+function display20Images (){
+   for (let index = 20; index < display20Images.length; index ++){
+      const letsSee = display20Images
+      display20Images.innerHTML()
+   }
+}
