@@ -1,21 +1,23 @@
 let coin = {
     state: 0,
     flip: function() {
-        for(let i = 0; i < state.length; i++){
-           return  this.state(Math.random())
-        }
+      if (Math.random()< .5){
+         this.state =1
+      }else{
+         this.state = 0
+      }
+
         /* 1. Randomly set your coin object's "state" property to be either 
            0 or 1: use "this.state" to access the "state" property on this object.*/
     },
 
 
     toString: function() {
-        if (heads > 1) {
-           result = heads;
-          } else {
-           result = tails;
-          }
-          return this.result;
+       if (this.state === 0){
+          return "heads"
+       }else{
+          return "tails"
+       }
          
         /* 2. Return the string "Heads" or "Tails", depending on whether
            "this.state" is 0 or 1. */     
@@ -34,15 +36,15 @@ let coin = {
 };
 
 function display20Flips (){
-   for (let index = 20; index < display20Flips.length; index ++){
+   for (let index = 0; index < 20; index ++){
       const coinFlip = display20Flips
       display20Flips.append(coinFlip)
    }
 }
 
 function display20Images (){
-   for (let index = 20; index < display20Images.length; index ++){
-      const letsSee = display20Images
+   for (let index = 0; index < 20; index ++){
+      
       display20Images.innerHTML()
    }
 }
